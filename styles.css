@@ -1,0 +1,120 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 94vh;
+    width: 100%;
+    background-color: lightslategray;
+    font-family: Arial;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    overflow: hidden;
+}
+
+#modal {
+    padding: 25px;
+    display: flex;
+    width: 80%;
+    height: 80%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    gap: 20px;
+}
+
+#img {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    width: 60%;
+}
+
+#img img {
+    width: 80%;
+}
+
+#form {
+    width: 40%;
+}
+
+#form hr {
+    border:1px solid lightseagreen;
+}
+
+#description {
+    font-size: 13px;
+}
+
+#survey-form {
+    position: absolute;
+    width: 100%;
+}
+
+#survey-form label {
+    display: flex;
+    flex-direction: column;
+}
+
+#survey-form label input {  
+    padding-left: 5px;
+    position: relative;
+    left: 2.5%;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 25%;
+    font-size: 15px;
+    color: #000000;
+}
+
+#survey-form label input::placeholder {
+    color: #000000;
+}
+
+#survey-form label select {
+    padding-left: 5px;
+    position: relative;
+    left: 2.5%;
+    height: 33px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 25.3%;
+    font-size: 15px;
+}
+
+
+#submit {
+    background-color: lightsalmon;
+}
+
+#submit:hover {
+    transform: scale(1.1);
+    transition: ease 1s;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 575px) {
+
+    body {
+        font-size: large;
+    }
+
+    #img {
+       display: none;
+    }
+
+    #form {
+        width: 90%;
+    }
+
+    #survey-form label input {
+        width: 75%;
+    }
+
+    #survey-form label select {
+        width: 75%;
+    }
+
+}

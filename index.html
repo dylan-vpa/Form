@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <section id="modal">
+        <div id="img">
+            <img src="img/img.jpg" alt="">
+        </div>
+        <div id="form">
+            <h1 id="title">Encuesta de sastifaccion</h1>
+            <hr>
+            <p id="description">Con el fin de mejorar el desempeño podrias ayudarnos con tu opinion</p>
+            <form id="survey-form" action="">
+                    <label  id="name-label" for="name">
+                        <input type="text" name="name" id="name" placeholder="Name:" required>
+                    </label>
+                    <br>
+                    <label id="email-label"  for="email">
+                        <input type="email" name="email" id="email" placeholder="Email:" required pattern=" [a-z]+([.][a-z-_]+)*@([[.]a-z_])+([.][a-z_]+)*[.][a-z-]">
+                    </label>
+                    <br>
+                    <label id="number-label" for="telefonic-number">
+                        <input type="number" name="telefonic-number" id="number"placeholder="Telefonic number:" required value="number" min="0" max="9999999999">
+                    </label>
+                    <br>
+                    <label for="satisfation">
+                        <select name="Sexo" id="dropdown" >
+                            <option value="0">Gender:</option>
+                            <option value="10">Hombre</option>
+                            <option value="20">Mujer</option>>
+                        </select>
+                    </label>
+                    <br>
+                    <label for="satisfation">
+                        <select name="satisfation" id="dropdown">
+                            <option value="0">Satisfation level:</option>
+                            <option value="10">10%</option>
+                            <option value="20">20%</option>
+                            <option value="30">30%</option>
+                            <option value="40">40%</option>
+                            <option value="50">50%</option>
+                            <option value="60">60%</option>
+                            <option value="70">70%</option>
+                            <option value="80">80%</option>
+                            <option value="90">90%</option>
+                            <option value="100">100%</option>
+                        </select>
+                    </label>
+                    <br>
+                    <label for="opinion">
+                        <input type="text" name="opinion" id="opinion" placeholder="Opinion:" required>
+                    </label>
+                    <br>
+                    <label for="send">
+                        <input type="submit" id="submit">
+                    </label>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
